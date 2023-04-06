@@ -6,7 +6,7 @@ I will quickly go over the methods which I've used to create this agent, and opt
 ## How I trained through an emulater?
 What I did is screenshot my other screen, since I have 2 monitors. Since I cropped the actual emulater screen, and grayscaled it, whichh resulted in an image like this:
 
-![link]([https://i.imgur.com/HNGBlg8.png])
+![photo_1](https://i.imgur.com/HNGBlg8.png?dl=0)
 
 Then, to I brainstormed to find the most efficient way to extract information about the playground, which is the most important aspect of the picture, in the least computationally expensive way. And, I though of something incredible that surprisingly worked, and that was to crop the main img to be only the playground, and since the tetris playground is comprised of 20 rows and 10 columns, I compressed the picture into 20x10 pixels. And that DID work, and it resulted in a 2d array, such that any 0 pixels mean that there is no blocks there, and any > 0 pixels meant that there was a piece there.
 
