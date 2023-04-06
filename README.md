@@ -1,7 +1,7 @@
 # TetrisDQN
 Here, I create a DQN agent which plays the old NES Tetris.
 
-[](https://i.imgur.com/uP7Ldfl.gif)
+![](https://i.imgur.com/uP7Ldfl.gif)
 
 I will quickly go over the methods which I've used to create this agent, and optimize it as much as I could in the given time that I've worked on it.
 
