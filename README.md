@@ -11,11 +11,11 @@ What I did is screenshot my other screen, since I have 2 monitors. Since I cropp
 
 ![photo_1](https://i.imgur.com/HNGBlg8.png?dl=0)
 
-Then, to I brainstormed to find the most efficient way to extract information about the playground, which is the most important aspect of the picture, in the least computationally expensive way. And, I though of something incredible that surprisingly worked, and that was to crop the main img to be only the playground, and since the tetris playground is comprised of 20 rows and 10 columns, I compressed the picture into 20x10 pixels. And that DID work, and it resulted in a 2d array, such that any 0 pixels mean that there is no blocks there, and any > 0 pixels meant that there was a piece there.
+Then, I brainstormed to find the most efficient way to extract information about the playground, which is the most important aspect of the picture, in the least computationally expensive way. And, I though of something incredible that surprisingly worked, and that was to crop the main img to be only the playground, and since the tetris playground is comprised of 20 rows and 10 columns, I compressed the picture into 20x10 pixels. And that DID work, and it resulted in a 2d array, such that any 0 pixels mean that there is no blocks there, and any > 0 pixels meant that there was a piece there.
 
 ![photo_2](https://i.imgur.com/quc8UX9.png?dl=0)
 
-And from this 2d grid representation. I was able to extract any data I wanted.
+And from this 2d grid representation, I was able to extract any data I wanted.
 
 ### Applying actions
 For some reason, the library called "keyboard" wasn't able to input actions to the actual emulater, hence I had to use another library called ctypes. Using this, I was able just to run the program, the program then would wait one second for me to click on the emulater window, and then the program would start. Ctypes uses DirectKeyInput (DKI) codes to simulate a button. So I just had to check the buttons I needed online, and then translate them into a DKI format. 
